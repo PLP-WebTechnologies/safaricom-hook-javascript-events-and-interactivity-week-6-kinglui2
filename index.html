@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Toggle Background Color -->
+  <button id="toggleBgBtn">Toggle Background Color</button>
+
+  <!-- Slider for Adjusting Text Size -->
+  <p id="sliderText">Adjust my size!</p>
+  <input type="range" id="textSlider" min="10" max="50" value="16">
+
+  <!-- Modal Trigger -->
+  <button id="openModalBtn">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Choose Your Language</h2>
+      <p>Select your preferred programming language:</p>
+      <select id="languageSelect">
+        <option value="python">Python</option>
+        <option value="c">C</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+      <p id="languageMessage"></p>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <form id="userForm">
+    <h2>Register</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <p class="error" id="nameError"></p>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <p class="error" id="emailError"></p>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <p class="error" id="passwordError"></p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
